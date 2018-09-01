@@ -5,16 +5,16 @@ Render 404 page.
 ## Installation
 
 ```
-npm i pambda-404 -S
+npm i pambda-404
 ```
 
 ## Usage
 
 ``` javascript
-import { compose, createLambda } from 'pambda';
-import { render404 } from 'pambda-404';
+const { compose, createLambda } = require('pambda');
+const { render404 } = require('pambda-404');
 
-export const handler = createLambda(
+exports.handler = createLambda(
   compose(
     render404()
   )
